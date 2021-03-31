@@ -1,150 +1,298 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
+  margin: 0 auto;
+  background-color: #d6e6f53f;
 }
 
 /* font-family: 'Oleo Script Swash Caps', cursive; */
-/*font-family: 'Lexend', sans-serif; */
-
+/* font-family: 'Lexend', sans-serif; */
 
 .navbar {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: white;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2f455b;
+  color: #b5cbde;
+  padding: 10px;
 }
 
 .brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    color: white;
-    letter-spacing: 1px;
-
+  font-size: 2rem;
+  margin: 0.5rem;
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: #b5cbde;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .navbar-links {
-    height: 100%;
+  height: 100%;
 }
 
 .navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: #b5cbde;
+  padding: 1rem;
+  font-family: "Lexend", sans-serif;
 }
 
 .navbar-links li:hover {
-    background-color: yellow;
+    border-bottom: 2px solid #b5cbde;
+    
+}
+
+.navbar-links li a:hover {
+    color: #7d7d85;
 }
 
 .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 24px;
 }
 
 .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+  height: 3px;
+  width: 100%;
+  background-color: #b5cbde;
+  border-radius: 10px;
 }
+
 
 @media (max-width: 800px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .toggle-button {
-        display: flex;
-    }
+  .toggle-button {
+    display: flex;
+  }
 
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
 
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .navbar-links ul li {
-        text-align: center;
-    }
+  .navbar-links ul li {
+    text-align: center;
+  }
 
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
 
-    .navbar-links.active {
-        display: flex;
-    }
+  .navbar-links.active {
+    display: flex;
+  }
 }
 
-
-
 .presentation {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(img/cover.jpg);
-    background-size: cover;
-
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/cover.jpg);
+  background-size: cover;
 }
 
 .title {
-    text-align: center;
+  text-align: center;
 }
 
-.title h1 {
-    font-family: 'Oleo Script Swash Caps', cursive;
-    font-size: 80px;
-    color: yellow;
-    letter-spacing: 3px;
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+  color: #b5cbde;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .title p {
-    font-family: 'Lexend', sans-serif;
-    color: white;
-    font-weight: 500;
-    font-size: 20px;
+  font-family: "Lexend", sans-serif;
+  color: #b5cbde;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.title-menu {
+  color: #2f455b;
+  text-align: center;
+  padding: 40px 0 8px 0;
+  font-family: "Lexend", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+hr {
+    border: 1px solid #2f455b;
+    width: 130px; 
+    margin: auto;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .menu {
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-    display: flex;
+  padding: 5rem 0;
+}
+
+.btn-container {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 90px 0 40px 0;
+}
+
+.filter-btn {
+  background: transparent;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border: 2px solid #7d7d85;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: var(--transition);
+  outline: none;
+  font-family: "Lexend", sans-serif;
+}
+
+.filter-btn:hover {
+  background-color: #2f455b;
+  color: #b5cbde;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 27rem;
 }
 
 .photo {
-    width: 450px;
+  object-fit: cover;
+  width: 240px;
+  border-radius: 10px;
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Lexend", sans-serif;
+}
+
+.item-info h4 {
+  margin-bottom: 1rem;
+  color: #2f455b;
+  font-weight: 800;
+}
+
+.item-text {
+  font-family: "Lexend", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  padding-top: 1rem;
+  color: #2f455b;
+ }
+
+.item-info .price {
+    color: #7d7d85;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+
+  .photo {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .photo {
+    height: 150px;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: #2f455b;
+  padding: 20px;
+  color: #b5cbde;
+}
+
+footer h4 {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 500;
+}
+
+.icon {
+  width:30px;
+  padding: 4px;
 }
