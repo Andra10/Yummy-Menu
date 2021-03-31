@@ -17,7 +17,7 @@
 <body>
   <!--Navbar-->
 
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="brand-title">Yummy.</div>
     <a href="#" class="toggle-button">
       <span class="bar"></span>
@@ -33,41 +33,57 @@
     </div>
   </nav>
 
-
   <!--Title-->
 
   <section class="presentation">
     <div class="title">
-      <h1>Yummy.</h1>
+      <h1 class="ml6">
+        <span class="text-wrapper">
+          <span class="letters">Yummy.</span>
+        </span>
+      </h1>
       <p>Industrial chick restaurant located on Lake Victoria</p>
     </div>
+  </section>
+
+  <section>
+    <div class="title-menu"> Menu </div>
+    <hr>
+  </section>
+
+
+  <section class="btn-container">
+    <button class="filter-btn">Breakfast</button>
+    <button class="filter-btn">Lunch</button>
+    <button class="filter-btn">Dinner</button>
+    <button class="filter-btn">Drinks</button>
   </section>
 
   <section class="menu">
     <div class="section-center">
       <!-- Breakfast- Pancake -->
-      
+
       <article class="menu-item">
         <img src="img/breakfast/pancakes.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4> Soft Pancakes</h4>
+            <h4 class="price">13.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Stack of fluffy pancakes tooped with fresh fruit and real Canadian maple sirup</p>
         </div>
       </article>
-    
+
       <!-- Breakfast- Smoothie -->
 
       <article class="menu-item">
         <img src="img/breakfast/smoothie.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Energy Smoothie</h4>
+            <h4 class="price">6.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Delicious fresh smoothie made with organic fruit as: strawberry, cherries, watermelon and pomegranate</p>
         </div>
       </article>
 
@@ -77,23 +93,23 @@
         <img src="img/breakfast/toast.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Avo Toast</h4>
+            <h4 class="price">16.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p  class="item-text">Toasted whole bread spread by smashed avocado and boiled eggs for a productive morning </p>
         </div>
       </article>
 
       <!-- Breakfast- Eggs Benedict -->
 
       <article class="menu-item">
-        <img src="img/breakfast/eggs benedict.jpg" class="photo" alt="" />
+        <img src="img/breakfast/eggs-benedict.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Eggs Benedict</h4>
+            <h4 class="price">15.95$</h4>
           </header>
-          <p>Description of the product</p>
+          <p  class="item-text">Poached egg served on a warm homemade muffin with spinach salad and bernaise sauce</p>
         </div>
       </article>
 
@@ -102,10 +118,10 @@
         <img src="img/breakfast/croissant.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Butter Croissant</h4>
+            <h4 class="price">2.50$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Fresh butter croissant with apricot. Perfect start in the morning</p>
         </div>
       </article>
 
@@ -117,10 +133,10 @@
         <img src="img/lunch/burger.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Chicken burger</h4>
+            <h4 class="price">14.95$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Juicy chicken burger served between two brioche buns with homemade sauce and arugola salad</p>
         </div>
       </article>
 
@@ -130,10 +146,10 @@
         <img src="img/lunch/carbonara.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Tonarelli Cacio e Pepe</h4>
+            <h4 class="price">9.90$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">A classic roman dish with Pecorino Romano 24 Months, Tasmanian Pepper and homemade fresh pasta</p>
         </div>
       </article>
 
@@ -143,10 +159,10 @@
         <img src="img/lunch/dumplings.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Burmese Festing</h4>
+            <h4 class="price">17.50$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Burmese dumpling filled with black tiger shrimps, fried cauliflower with a spicy coconut sauce</p>
         </div>
       </article>
       <!--lunch - tacos-->
@@ -155,10 +171,10 @@
         <img src="img/lunch/tacos.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Tacos al Pastor</h4>
+            <h4 class="price">8.95$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Tacos al pastor made by pork shoulder served with rice and beans</p>
         </div>
       </article>
 
@@ -169,10 +185,10 @@
         <img src="img/dinner/pizza.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Pepperoni Pizza</h4>
+            <h4 class="price">7.50$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Delicious american pizza made with hydrated dough by 24 hours and special pepperoni</p>
         </div>
       </article>
 
@@ -181,10 +197,10 @@
         <img src="img/dinner/ribs.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Short Ribs</h4>
+            <h4 class="price">18.60$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Juicy Nashville Ribs made with honey Jack Daniels sauce</p>
         </div>
       </article>
       <!--dinner-->
@@ -193,23 +209,23 @@
         <img src="img/dinner/steak.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>NY Ribeye</h4>
+            <h4 class="price">24.90$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Marinated and grilled NY Ribeye served with smoky garlic sauce and frech fries</p>
         </div>
       </article>
 
       <!-- dinner-->
 
       <article class="menu-item">
-        <img src="img/dinner/sushi.jpg" class="photo" alt="" />
+        <img src="img/dinner/sushi1.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>California Sushi</h4>
+            <h4 class="price">19.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Delicious salmon roll filled by dried shrimps and avocado paste on a topinambur cream</p>
         </div>
       </article>
 
@@ -219,10 +235,10 @@
         <img src="img/dinner/chicken.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Organic happy Chicken</h4>
+            <h4 class="price">15.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Organic chicken slow cooked on a stone oven with caramelized vegetables</p>
         </div>
       </article>
 
@@ -232,36 +248,36 @@
         <img src="img/drinks/heineken.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Heineken </h4>
+            <h4 class="price">3.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Four simple ingredients that offer endless possibilities for ethernal parties </p>
         </div>
       </article>
 
       <!--drinks-->
 
       <article class="menu-item">
-        <img src="img/drinks/gin tonic.jpg" class="photo" alt="" />
+        <img src="img/drinks/gin-tonic.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Gin Tonic</h4>
+            <h4 class="price">7.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Excelent Brockmans Gin mixed with J.Gasco Tonic with a little citrucy taste by bergamotto</p>
         </div>
       </article>
 
       <!--drinks-->
 
       <article class="menu-item">
-        <img src="img/drinks/handcraft beer.jpg" class="photo" alt="" />
+        <img src="img/drinks/handcraft-beer.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Handcraft double beer</h4>
+            <h4 class="price">4.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">The toasted malts and citrus scents from American hops blend to give a hoppy, alcoholic and fruity drink with a pleasant final dryness.</p>
         </div>
       </article>
 
@@ -271,10 +287,10 @@
         <img src="img/drinks/mojito.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Mojito</h4>
+            <h4 class="price">8.95$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">Tastes like Havana's night on a rooftop and Buena Vista Social Club on the background</p>
         </div>
       </article>
 
@@ -284,10 +300,10 @@
         <img src="img/drinks/whiskey.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Whiskey</h4>
+            <h4 class="price">12.95$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">An elegant whiskey with a light nose, that combines the aromas of an autumn day. Wood, vanilla, maple syrup, apple and brown sugar give the whiskey its typical bouquet. </p>
         </div>
       </article>
 
@@ -296,16 +312,22 @@
         <img src="img/drinks/margarita.jpg" class="photo" alt="" />
         <div class="item-info">
           <header>
-            <h4>Pancake</h4>
-            <h4 class="price">15$</h4>
+            <h4>Margarita</h4>
+            <h4 class="price">9.99$</h4>
           </header>
-          <p>Description of the product</p>
+          <p class="item-text">When it comes down to cocktails, Margarita is the epitome of elegance. It is a legendary cocktail, the standard-bearer of the Mexican colors, because the main ingredient is Tequila, the famous brandy dis
         </div>
       </article>
     </div>
   </section>
 
+  <footer>
+    <h4>Andra Bejenar | 2021 ©️</h4>
+    <a href="mailto:bejeandra@gmail.com"><img class="icon" src="img/icons/email.svg" alt="mail"></a> 
+    <a href="https://github.com/Andra10"><img class="icon" src="img/icons/github.svg" alt="github"></a> 
+  </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="script.js"></script>
 </body>
 
